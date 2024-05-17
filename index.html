@@ -8,14 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+
 
 
 
 </head>
 
 <body class="container mx-auto mt-6 box-border">
-    <header class="lg:mx-10 mx-3">
+    <header class=" hidden   lg:mx-10 mx-3">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -68,7 +68,7 @@
         </div>
     </header>
 
-    <main class="mt-14">
+    <main class=" hidden   mt-14">
         <!-- offer section -->
         <section>
             <h1 class="text-4xl font-bold text-center text-black">Best offers for you</h1>
@@ -113,279 +113,389 @@
             </div>
         </section>
 
-        <section
-            class="w-full  mb-32 border-t-2 border-solid border-[#1DD100] rounded-tl-[88px] rounded-tr-[88px] bg-[#F7F8F8] px-32">
-            <div class="w-full flex flex-col items-center justify-center text-center space-y-6 mt-28 mb-12">
-                <h1 class="text-4xl font-semibold text-black ">Smile Paribahan</h1>
-                <p class="w-1/2 opacity-60">Yes, you can run unit tests and view the results directly within the app.
-                    The
-                    integrated testing
-                    features
-                    allow for a streamlined .</p>
+        <section class="   border-t-2 border-solid border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] ">
+
+            <div class="bg-[#F7F8F8]  border-b border-[#F7F8F8]  px-28">
+                <div class="   w-full flex flex-col items-center justify-center text-center space-y-6 mt-28 mb-12">
+                    <h1 class="text-4xl font-semibold text-black ">Smile Paribahan</h1>
+                    <p class="w-1/2 opacity-60">Yes, you can run unit tests and view the results directly within the
+                        app.
+                        The
+                        integrated testing
+                        features
+                        allow for a streamlined .</p>
+                </div>
+                <div class="min-h-96  px-8 rounded-3xl bg-white  grid grid-cols-4 gap-9">
+                    <!-- div 1 -->
+                    <div class="col-span-3 mt-8 mb-8">
+                        <div class=" flex h-20 justify-between">
+                            <div class="flex gap-3 items-center">
+                                <div><img src="./images/bus-logo.png" alt=""></div>
+                                <div class="space-y-4">
+                                    <h1 class="text-4xl font-semibold">Smile Paribahan</h1>
+                                    <p class="opacity-60">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-3 w-44  h-14 font-bold bg-[#1DD10026] rounded-xl 
+                            ">
+                                <img src="./images/seat-green.png" alt="">
+                                <p class="font-bold text-[#1DD100]"><span>40</span> Seats left</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#F7F8F8] p-8 mt-6 rounded-3xl">
+                            <div class="flex justify-between mb-6 ">
+                                <h4 class="text-xl font-semibold text-[#03071299]">Route</h4>
+                                <h4 class="text-xl font-semibold text-black">Dhaka - Sylhet</h4>
+
+                            </div>
+                            <hr class="border-dashed">
+                            <div class="flex justify-between mt-6 mb-6 ">
+                                <h4 class="text-xl font-semibold text-[#03071299]">Departure Time</h4>
+                                <h4 class="text-xl font-semibold text-black">9:00 PM</h4>
+
+                            </div>
+                            <hr class="border-dashed">
+                            <div class="flex justify-between gap-7 mt-6 mb-6  ">
+                                <div class="bg-[#0307120D] rounded-xl  p-4">
+                                    <h4 class=" font-semibold text-[#03071299]">Boarding Point - Laxmipur</h4>
+                                </div>
+                                <div class="bg-[#0307120D] rounded-xl p-4">
+                                    <h4 class=" font-semibold text-[#03071299]">Dropping Point - Bogura</h4>
+                                </div>
+                                <div class="bg-[#0307120D] rounded-xl p-4">
+                                    <h4 class=" font-semibold text-[#03071299]">Est. Time - 11 Hour</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- div 2 -->
+                    <div class="flex justify-between">
+                        <div><img class="h-full" src="./images/info-devider.png" alt=""></div>
+
+                        <div class="flex flex-col justify-center items-center text-center space-y-3">
+                            <img src="./images/fare.png" alt="">
+                            <h1 class="text-4xl font-semibold">550 Taka</h1>
+                            <p class="text-[#03071299]">Per Seat</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- select sit -->
+                <div class="mt-7 border  mb-24 gap-7 bg-white p-8 rounded-3xl grid grid-cols-5 ">
+                    <!-- sit div -->
+                    <div class="col-span-3">
+                        <h4 class="text-xl font-semibold text-black">Select Your Seat</h4>
+                        <hr class="border-dashed  mt-6 mb-6">
+                        <div class="flex justify-between items-center">
+                            <div class="flex gap-3">
+                                <img src="./images/seat-gray.png" alt="">
+                                <h1>Available</h1>
+
+                            </div>
+
+                            <div class="flex gap-3">
+                                <img src="./images/seat-green-filled.png" alt="">
+                                <h1>Selected</h1>
+
+                            </div>
+
+                        </div>
+                        <hr class="border-dashed  mt-6 mb-6">
+                        <div class="bg-[#0307121A] w-24 ml-auto py-3 px-2 rounded-xl">
+                            <img class="block m-auto " src="./images/wheel.png" alt="">
+                        </div>
+                        <!-- all sit   -->
+                        <div class="grid grid-cols-7 gap-8 mt-6">
+                            <!-- serial  -->
+                            <div class="col-span-1 grid gap-6">
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">A</p>
+                                </div>
+                                <div class=" py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">B</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">C</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">D</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">E</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">F</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">G</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">H</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">I</p>
+                                </div>
+                                <div class="py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg m-auto block font-bold text-[#03071280]">J</p>
+                                </div>
+                            </div>
+                            <!-- left colum -->
+                            <div class=" col-span-3 grid grid-cols-2 gap-6 mr-6">
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">A1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">A2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">B1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">B2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">C1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">C2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">D1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">D2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">E1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">E2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">F1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">F2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">G1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">G2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">H1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">H2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">I1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">I2</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">J1</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">J2</p>
+                                </div>
+                            </div>
+                            <!-- right colum -->
+                            <div class="col-span-3 grid grid-cols-2 gap-6 ml-6">
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">A3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">A4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">B3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">B4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">C3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">C4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">D3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">D4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">E3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">E4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">F3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">F4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">G3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">G4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">H3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">H4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">I3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">I4</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">J3</p>
+                                </div>
+                                <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                    <p class="text-lg font-bold text-[#03071280]">J4</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- calculation div -->
+                    <div class="col-span-2 flex ">
+                        <div class="h-full border-dashed border-l-2 border-[#0307124D]"></div>
+                        <div class="w-full pl-4  ml-6">
+                            <h4 class="text-xl font-semibold text-black">Select Your Seat</h4>
+                            <hr class="border-dashed  mt-6 mb-6">
+
+                            <div class="bg-[#F7F8F8] pt-8 px-8 pb-4 rounded-lg">
+                                <div id="" class="selected-sit">
+                                    <h4 class="">Seat <span class="bg-[#1DD100] text-white rounded-lg  px-3">0</span>
+                                    </h4>
+                                    <h4 class="">Class</h4>
+                                    <h4 class="">Price</h4>
+                                </div>
+                                <hr class="border-dashed border-2 
+                                border-[#03071233] mb-4">
+                                <!-- selected  sit will add there -->
+                                <div id="selected-sit" class="">
+
+                                </div>
+                                <hr class="my-4">
+
+                                <div class="selected-sit">
+                                    <h4>Total Price</h4>
+                                    <h4>BDT 0</h4>
+                                </div>
+
+                                <label class=" bg-white p-2 rounded-lg flex items-center gap-2">
+                                    <input type="text" class="grow outline-none" placeholder="Have any coupon?" />
+                                    <button class="btn text-white font-bold bg-[#1DD100]">Apply</button>
+                                </label>
+                                <div class="selected-sit my-6">
+                                    <h4>Grand Total</h4>
+                                    <h4>BDT 0</h4>
+                                </div>
+
+                            </div>
+
+                            <form>
+                                <label class="form-control w-full ">
+                                    <div class="label">
+                                        <span class="label-text font-semibold text-black text-xl">Passenger Name*</span>
+
+                                    </div>
+                                    <input type="text" placeholder="Enter your name"
+                                        class="input input-bordered w-full " />
+                                    <div class="label">
+                                    </div>
+                                </label>
+                                <label class="form-control w-full ">
+                                    <div class="label">
+                                        <span class="label-text font-semibold text-black text-xl">Phone Number*</span>
+
+                                    </div>
+                                    <input type="text" placeholder="Enter your phone number"
+                                        class="input input-bordered w-full " />
+                                    <div class="label">
+                                    </div>
+                                </label>
+                                <label class="form-control w-full ">
+                                    <div class="label">
+                                        <span class="label-text font-semibold text-black text-xl">Email ID</span>
+
+                                    </div>
+                                    <input type="text" placeholder="Enter your email id"
+                                        class="input input-bordered w-full " />
+                                    <div class="label">
+                                    </div>
+                                </label>
+                            </form>
+                            <button
+                                class="btn text-white text-xl font-bold w-full rounded-xl bg-[#1DD100]">Next</button>
+                            <div class="flex justify-around mt-6">
+                                <a class="underline" href="">Terms and Conditions</a>
+                                <a class="underline" href="">Cancellation Policy</a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
             </div>
-            <div class="min-h-96  px-8 rounded-3xl bg-white  grid grid-cols-4 gap-9">
-                <!-- div 1 -->
-                <div class="col-span-3 mt-8 mb-8">
-                    <div class=" flex h-20 justify-between">
-                        <div class="flex gap-3 items-center">
-                            <div><img src="./images/bus-logo.png" alt=""></div>
-                            <div class="space-y-4">
-                                <h1 class="text-4xl font-semibold">Smile Paribahan</h1>
-                                <p class="opacity-60">Coach-009-WEB ! AC_Business</p>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center gap-3 w-44  h-14 font-bold bg-[#1DD10026] rounded-xl 
-                        ">
-                            <img src="./images/seat-green.png" alt="">
-                            <p class="font-bold text-[#1DD100]"><span>40</span> Seats left</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#F7F8F8] p-8 rounded-3xl">
-                        <div class="flex justify-between mb-6 ">
-                            <h4 class="text-xl font-semibold text-[#03071299]">Route</h4>
-                            <h4 class="text-xl font-semibold text-black">Dhaka - Sylhet</h4>
-
-                        </div>
-                        <hr class="border-dashed">
-                        <div class="flex justify-between mt-6 mb-6 ">
-                            <h4 class="text-xl font-semibold text-[#03071299]">Departure Time</h4>
-                            <h4 class="text-xl font-semibold text-black">9:00 PM</h4>
-
-                        </div>
-                        <hr class="border-dashed">
-                        <div class="flex justify-between mt-6 mb-6  ">
-                            <div class="bg-[#0307120D] rounded-xl p-4">
-                                <h4 class="text-xl font-semibold text-[#03071299]">Boarding Point - Laxmipur</h4>
-                            </div>
-                            <div class="bg-[#0307120D] rounded-xl p-4">
-                                <h4 class="text-xl font-semibold text-[#03071299]">Dropping Point - Bogura</h4>
-                            </div>
-                            <div class="bg-[#0307120D] rounded-xl p-4">
-                                <h4 class="text-xl font-semibold text-[#03071299]">Est. Time - 11 Hour</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- div 2 -->
-                <div class="flex justify-between">
-                    <div><img class="h-full" src="./images/info-devider.png" alt=""></div>
-
-                    <div class="flex flex-col justify-center items-center text-center space-y-3">
-                        <img src="./images/fare.png" alt="">
-                        <h1 class="text-4xl font-semibold">550 Taka</h1>
-                        <p class="text-[#03071299]">Per Seat</p>
 
 
-                    </div>
-                </div>
-
-            </div>
-            <!-- select sit -->
-            <div class="mt-7 bg-white p-8 rounded-3xl grid grid-cols-5">
-                <!-- sit div -->
-                <div class="col-span-3">
-                    <h4 class="text-xl font-semibold text-black">Select Your Seat</h4>
-                    <hr class="border-dashed  mt-6 mb-6">
-                    <div class="flex justify-between items-center">
-                        <div class="flex gap-3">
-                            <img src="./images/seat-gray.png" alt="">
-                            <h1>Available</h1>
-
-                        </div>
-
-                        <div class="flex gap-3">
-                            <img src="./images/seat-green-filled.png" alt="">
-                            <h1>Selected</h1>
-
-                        </div>
-
-                    </div>
-                    <hr class="border-dashed  mt-6 mb-6">
-                    <div class="bg-[#0307121A] w-24 ml-auto py-3 px-2 rounded-xl">
-                        <img class="block m-auto " src="./images/wheel.png" alt="">
-                    </div>
-                    <!-- all sit   -->
-                    <div class="grid grid-cols-7 gap-8 mt-6">
-                        <!-- serial  -->
-                        <div class="col-span-1 grid gap-6">
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">A</p>
-                            </div>
-                            <div class=" py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">B</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">C</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">D</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">E</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">F</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">G</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">H</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">I</p>
-                            </div>
-                            <div class="py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg m-auto block font-bold text-[#03071280]">J</p>
-                            </div>
-                        </div>
-                        <!-- left colum -->
-                        <div class=" col-span-3 grid grid-cols-2 gap-6 mr-6">
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">A1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">A2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">B1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">B2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">C1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">C2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">D1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">D2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">E1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">E2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">F1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">F2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">G1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">G2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">H1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">H2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">I1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">I2</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">J1</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">J2</p>
-                            </div>
-                        </div>
-                        <!-- right colum -->
-                        <div class="col-span-3 grid grid-cols-2 gap-6 ml-6">
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">A3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">A4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">B3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">B4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">C3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">C4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">D3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">D4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">E3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">E4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">F3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">F4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">G3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">G4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">H3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">H4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">I3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">I4</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">J3</p>
-                            </div>
-                            <div class="bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
-                                <p class="text-lg font-bold text-[#03071280]">J4</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- calculation div -->
-                <div>
-
-                </div>
-
-
-            </div>
         </section>
 
 
-
-
     </main>
-    <footer>
+    <footer class=" hidden  bg-[#030712] px-36 py-28 ">
+        <div class="flex justify-between">
+            <div class="text-white space-y-4">
+                <h1 class="text-4xl font-bold">S-Ticket</h1>
+                <p class="w-80 opacity-50">s-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+
+            <div class="text-white space-y-4">
+                <h1 class="text-2xl font-semibold">Download our app</h1>
+                <a href="" class="flex items-center bg-black border rounded-lg border-white  gap-2">
+                    <img class="w-9 h-9" src="./images/playstore.png" alt="">
+                    <span>
+                        <h1 class="text-lg font-bold">GET ON IT</h1>
+                        <h1 class="text-2xl font-bold">Google Play</h1>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <hr class="border-dashed border-[#FFFFFF4D] border[1.5px] my-8">
+
+        <div class="text-white flex justify-between">
+            <p class="opacity-50">@all rights reserved, P-Ticket services limited.2024</p>
+            <div class="space-x-4">
+                <a class="underline" href="">Terms & condition</a>
+                <a class="underline" href="">Return & refund policy</a>
+                <a class="underline" href="">Privacy policy</a>
+            </div>
+        </div>
 
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
