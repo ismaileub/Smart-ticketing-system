@@ -15,7 +15,7 @@
 </head>
 
 <body class="container mx-auto mt-6 box-border">
-    <header class="    lg:mx-10 mx-3">
+    <header id="header" class="    lg:mx-10 mx-3">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -63,7 +63,8 @@
                     within the
                     app. The
                     integrated testing features allow for a streamlined </p>
-                <button class="btn font-raleway text-lg font-semibold text-black border-none bg-[#1DD100]">Buy
+                <button onclick="scrollToSection()"
+                    class="btn text-white font-raleway text-lg font-semibold border-none bg-[#1DD100]">Buy
                     Tickets</button>
 
             </div>
@@ -72,7 +73,7 @@
         </div>
     </header>
 
-    <main class="    mt-14">
+    <main id="main" class="    mt-14">
         <!-- offer section -->
         <section>
             <h1 class="text-4xl font-raleway font-bold text-center text-black">Best offers for you</h1>
@@ -187,7 +188,7 @@
 
                 </div>
                 <!-- select sit -->
-                <div class="mt-7 border  mb-24 gap-7 bg-white p-8 rounded-3xl grid grid-cols-5 ">
+                <div id="sit-div" class="mt-7 border  mb-24 gap-7 bg-white p-8 rounded-3xl grid grid-cols-5 ">
                     <!-- sit div -->
                     <div class="col-span-3">
                         <h4 class="text-xl font-raleway font-semibold text-black">Select Your Seat</h4>
@@ -247,127 +248,128 @@
                             </div>
                             <!-- left colum -->
                             <div class=" col-span-3 grid grid-cols-2 gap-6 mr-6">
-                                <div class=" sit  bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
+                                <div
+                                    class=" hover:cursor-pointer sit   bg-[#F7F8F8]    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">A1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit    py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit     py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">A2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">B1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">B2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">C1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">C2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">D1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">D2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">E1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">E2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">F1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">F2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">G1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">G2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">H1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">H2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">I1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">I2</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">J1</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">J2</p>
                                 </div>
                             </div>
                             <!-- right colum -->
                             <div class="col-span-3 grid grid-cols-2 gap-6 ml-6">
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">A3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8] sit   py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8] hover:cursor-pointer sit    py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">A4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">B3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">B4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">C3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">C4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">D3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">D4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">E3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">E4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">F3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">F4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">G3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">G4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">H3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">H4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">I3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">I4</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">J3</p>
                                 </div>
-                                <div class="bg-[#F7F8F8]  sit  py-3 px-2 rounded-xl text-center">
+                                <div class="bg-[#F7F8F8]  hover:cursor-pointer sit   py-3 px-2 rounded-xl text-center">
                                     <p class="text-lg font-bold text-[#03071280]">J4</p>
                                 </div>
                             </div>
@@ -391,7 +393,7 @@
                                 </div>
                                 <hr class="border-dashed border-2 
                                 border-[#03071233] mb-4">
-                                <!-- selected  sit will add there -->
+                                <!-- selected  sits will add there -->
                                 <div id="added-div" class="">
 
                                 </div>
@@ -403,8 +405,10 @@
                                 </div>
 
                                 <label class=" bg-white p-2 rounded-lg flex items-center gap-2">
-                                    <input type="text" class="grow outline-none" placeholder="Have any coupon?" />
-                                    <button class="btn text-white font-bold bg-[#1DD100]">Apply</button>
+                                    <input type="text" id="coupon-felid" class="grow outline-none"
+                                        placeholder="Have any coupon?" />
+                                    <button id="applyButton" onclick="discountForCoupon()"
+                                        class="btn text-white font-bold bg-[#1DD100]">Apply</button>
                                 </label>
                                 <div class="selected-sit my-6">
                                     <h4>Grand Total</h4>
@@ -419,7 +423,7 @@
                                         <span class="label-text font-semibold text-black text-xl">Passenger Name*</span>
 
                                     </div>
-                                    <input type="text" placeholder="Enter your name"
+                                    <input id="passenger-name" type="text" placeholder="Enter your name"
                                         class="input input-bordered w-full " />
                                     <div class="label">
                                     </div>
@@ -429,7 +433,7 @@
                                         <span class="label-text font-semibold text-black text-xl">Phone Number*</span>
 
                                     </div>
-                                    <input type="text" placeholder="Enter your phone number"
+                                    <input id="passenger-number" type="text" placeholder="Enter your phone number"
                                         class="input input-bordered w-full " />
                                     <div class="label">
                                     </div>
@@ -445,7 +449,7 @@
                                     </div>
                                 </label>
                             </form>
-                            <button
+                            <button id="purchase-btn" onclick="purchaseSit()"
                                 class="btn text-white text-xl font-bold w-full rounded-xl bg-[#1DD100]">Next</button>
                             <div class="flex justify-around mt-6">
                                 <a class="underline" href="">Terms and Conditions</a>
@@ -467,7 +471,8 @@
 
 
     </main>
-    <footer class="   bg-[#030712] px-36 py-28 ">
+
+    <footer id="footer" class="   bg-[#030712] px-36 py-28 ">
         <div class="flex justify-between">
             <div class="text-white space-y-4">
                 <h1 class="text-4xl font-bold">S-Ticket</h1>
@@ -499,7 +504,7 @@
     </footer>
 
     <!-- ticket buy success section -->
-    <section class="  hidden p-10 flex justify-center items-center min-h-screen bg-[#F2F1F1]">
+    <section id="buy-success" class="  hidden p-10 flex justify-center items-center min-h-screen bg-[#F2F1F1]">
         <div class="flex flex-col items-center justify-center text-center bg-white space-y-4   w-[750px] h-[380px]">
             <img src="./images/success.png" alt="">
             <h1 class="text-xl font-semibold text-[#27AE60]">SUCCESS</h1>

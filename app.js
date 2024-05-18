@@ -1,3 +1,8 @@
+function scrollToSection() {
+    document.getElementById('sit-div').scrollIntoView({ behavior: 'smooth' });
+}
+
+
 
 
 const allSits = document.getElementsByClassName('sit');
@@ -17,6 +22,16 @@ function setElementValueById(id, value) {
 for (const sit of allSits) {
     sit.addEventListener('click', function (event) {
 
+        const maxSit = getElementValueBYId('sit-count');
+        if (parseInt(maxSit) + 1 > 4) {
+            alert("You can't select more then 4 sit");
+            return;
+        }
+
+
+
+
+
         const targetDiv = event.target.closest('.sit');
 
         targetDiv.classList.remove('bg-[#F7F8F8]');
@@ -32,6 +47,7 @@ for (const sit of allSits) {
         var newValue = parseInt(value) + 1;
 
         setElementValueById('sit-count', newValue);
+
         const div = document.createElement('div');
         const p1 = document.createElement('p');
         const p2 = document.createElement('p');
@@ -60,10 +76,94 @@ for (const sit of allSits) {
         const grandTotalValue = getElementValueBYId('total-price');
         grandTotal.innerText = grandTotalValue;
 
+        targetDiv.style.pointerEvents = 'none';
 
 
 
 
     })
+
+}
+
+function discountForCoupon() {
+    const coupon = document.getElementById('coupon-felid');
+    const couponValue = coupon.value;
+    if (couponValue === 'NEW15') {
+        const grandTotal = getElementValueBYId('grand-total');
+
+        const discount = parseInt(grandTotal) * .15;
+        const newGrandTotal = parseInt(grandTotal) - discount;
+        setElementValueById('grand-total', newGrandTotal);
+        const button = document.getElementById('applyButton');
+        if (grandTotal !== '0') {
+            button.disabled = true;
+        }
+
+
+    }
+
+    else if (couponValue === 'Couple20') {
+        const grandTotal = getElementValueBYId('grand-total');
+        const discount = parseInt(grandTotal) * .20;
+        const newGrandTotal = parseInt(grandTotal) - discount;
+        setElementValueById('grand-total', newGrandTotal);
+        const button = document.getElementById('applyButton');
+
+        //button.setAttribute('disabled', true);
+        if (grandTotal !== '0') {
+            button.disabled = true;
+        }
+
+    }
+    else {
+        alert('Invalid coupon code');
+    }
+
+
+}
+function getInputValueById(id) {
+    const value = document.getElementById(id).value;
+    return value;
+
+}
+function getElementById(id) {
+    const element = document.getElementById('id');
+    return element;
+}
+
+function removeElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+
+}
+
+function addElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+
+}
+
+function purchaseSit() {
+    const name = getInputValueById('passenger-name');
+    const number = getInputValueById('passenger-number');
+    const numberOfSit = getElementValueBYId('sit-count');
+
+    if (numberOfSit === '0') {
+        alert('Selected your sit');
+    }
+
+    else if (name === '' || number === '') {
+        alert('Give your name and phone number');
+    }
+
+    else {
+        addElementById('header');
+        addElementById('main');
+        addElementById('footer');
+
+        removeElementById('buy-success');
+
+
+    }
 
 }
